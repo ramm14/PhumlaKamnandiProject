@@ -1,7 +1,7 @@
 # PhumlaKamnandiProject
 This is a repository for a group project for the University of Cape Town second year course - INF2011S (Systems design & Development). 
 
-The PhumlaKamnandi Project consisted of developing a Hotel Booking System for a mock South African Hotel Franchise. We were tasked to develop a system that implemented the following use cases ; Make a Booking from the Perspective of a Receptionist on a Call with Customer , Change a Guest booking , Cancel a Guest Booking & Make a Booking Enquiry.
+The PhumlaKamnandi Project consisted of developing a Hotel Booking System for a mock South African Hotel Franchise. We were tasked to develop a system that implemented the following use cases : Make a Booking from the Perspective of a Receptionist on a Call with Customer , Change a Guest booking , Cancel a Guest Booking & Make a Booking Enquiry.
 
 All members were involved in every aspect of the project however their primary responsibilities will be listed:
 
