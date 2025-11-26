@@ -19,7 +19,7 @@ namespace PhumlaKamnandiProject.Data
         #region Constructor
         public BaseDA()
         {
-            connectionString = @"Server=tcp:group27db-server.database.windows.net,1433;Initial Catalog=Group27_SemesterProjectDB;Persist Security Info=False;User ID=Siya;Password=Password123!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+            connectionString = @"Server=tcp:group27db-server.database.windows.net,1433;Initial Catalog=Group27_SemesterProjectDB;Persist Security Info=False;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
             connection = new SqlConnection(connectionString);
         }
 
