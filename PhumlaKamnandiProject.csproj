@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CE194F31-61C8-4AEA-9EFD-C0160F323F71}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PhumlaKamnandiProject</RootNamespace>
+    <AssemblyName>PhumlaKamnandiProject</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Business\Booking.cs" />
+    <Compile Include="Business\BookingController.cs" />
+    <Compile Include="Business\Guest.cs" />
+    <Compile Include="Business\GuestController.cs" />
+    <Compile Include="Business\PaymentController.cs" />
+    <Compile Include="Business\Room.cs" />
+    <Compile Include="Business\RoomController.cs" />
+    <Compile Include="Data\BookingDA.cs" />
+    <Compile Include="Data\BaseDA.cs" />
+    <Compile Include="Data\GuestDA.cs" />
+    <Compile Include="Data\PaymentDA.cs" />
+    <Compile Include="Data\RoomDA.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\AboutPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AboutPage.Designer.cs">
+      <DependentUpon>AboutPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\BookingLookup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\BookingLookup.Designer.cs">
+      <DependentUpon>BookingLookup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\BookingSession.cs" />
+    <Compile Include="UI\CancelBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\CancelBooking.Designer.cs">
+      <DependentUpon>CancelBooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ChangeBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ChangeBooking.Designer.cs">
+      <DependentUpon>ChangeBooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\EndOfBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\EndOfBooking.Designer.cs">
+      <DependentUpon>EndOfBooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ExistingGuestDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ExistingGuestDetails.Designer.cs">
+      <DependentUpon>ExistingGuestDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\GuestAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\GuestAccount.Designer.cs">
+      <DependentUpon>GuestAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\GuestDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\GuestDetails.Designer.cs">
+      <DependentUpon>GuestDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Homepage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Homepage.Designer.cs">
+      <DependentUpon>Homepage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MakeEnquiry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MakeEnquiry.Designer.cs">
+      <DependentUpon>MakeEnquiry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\OccupancyReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\OccupancyReport.Designer.cs">
+      <DependentUpon>OccupancyReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PaymentInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\PaymentInformation.Designer.cs">
+      <DependentUpon>PaymentInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReservationConfirmation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReservationConfirmation.Designer.cs">
+      <DependentUpon>ReservationConfirmation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReservationDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReservationDetails.Designer.cs">
+      <DependentUpon>ReservationDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReservationDetailsRoomPrice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReservationDetailsRoomPrice.Designer.cs">
+      <DependentUpon>ReservationDetailsRoomPrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReservationPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReservationPage.Designer.cs">
+      <DependentUpon>ReservationPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\RevenueReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\RevenueReport.Designer.cs">
+      <DependentUpon>RevenueReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SearchExistingGuest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SearchExistingGuest.Designer.cs">
+      <DependentUpon>SearchExistingGuest.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UI\AboutPage.resx">
+      <DependentUpon>AboutPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\BookingLookup.resx">
+      <DependentUpon>BookingLookup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CancelBooking.resx">
+      <DependentUpon>CancelBooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ChangeBooking.resx">
+      <DependentUpon>ChangeBooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\EndOfBooking.resx">
+      <DependentUpon>EndOfBooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ExistingGuestDetails.resx">
+      <DependentUpon>ExistingGuestDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\GuestAccount.resx">
+      <DependentUpon>GuestAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\GuestDetails.resx">
+      <DependentUpon>GuestDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Homepage.resx">
+      <DependentUpon>Homepage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MakeEnquiry.resx">
+      <DependentUpon>MakeEnquiry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\OccupancyReport.resx">
+      <DependentUpon>OccupancyReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PaymentInformation.resx">
+      <DependentUpon>PaymentInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReservationConfirmation.resx">
+      <DependentUpon>ReservationConfirmation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReservationDetails.resx">
+      <DependentUpon>ReservationDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReservationDetailsRoomPrice.resx">
+      <DependentUpon>ReservationDetailsRoomPrice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReservationPage.resx">
+      <DependentUpon>ReservationPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\RevenueReport.resx">
+      <DependentUpon>RevenueReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SearchExistingGuest.resx">
+      <DependentUpon>SearchExistingGuest.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\valeriia-bugaiova-_pPHgeHz1uk-unsplash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trac-vu-vi59jclwSko-unsplash.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
