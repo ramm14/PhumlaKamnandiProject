@@ -3,6 +3,8 @@ This is a repository for a group project for the University of Cape Town second 
 
 The PhumlaKamnandi Project consisted of developing a Hotel Booking System for a mock South African Hotel Franchise. We were tasked to develop a system that implemented the following use cases : Make a Booking from the Perspective of a Receptionist on a Call with Customer , Change a Guest booking , Cancel a Guest Booking & Make a Booking Enquiry.
 
+An Azure SQL Database was used that utilizes a IP Filtering Firewall thus a request to access the DB should be forwarded to Siya. 
+
 All members were involved in every aspect of the project however their primary responsibilities will be listed:
 
 Siya Ramavhunga (RMVSIY001@myuct.ac.za / siya.ramaa11@gmail.com) - Backend Development , Database Management & Design & UML Diagram For Main Use Case.
